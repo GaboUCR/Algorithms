@@ -2,6 +2,21 @@ from helper import check_sort
 import random
 import copy
 
+#mutates list
+def bubble_sort_2(list):
+    swap = False
+
+    while (not swap):
+        swap = True
+
+        for e in range(1,len(list)):
+            if (list[e] < list[e-1]):
+                swap = False
+                temp = list[e]
+                list[e] = list[e-1]
+                list[e-1] = temp
+
+
 def bubble_sort(list):
     sorted_list = copy.deepcopy(list)
     new_list = []
@@ -28,11 +43,12 @@ def bubble_sort(list):
 
 def main():
     l = []
-    for n in range(100):
+    for n in range(10):
         l.append(random.randint(-1211, 1000))
 
     print(l)
-    print(bubble_sort(l))
+    bubble_sort_2(l)
+    print(l)
 
 if __name__ == '__main__':
     main()
