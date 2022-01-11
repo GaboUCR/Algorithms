@@ -1,13 +1,5 @@
 import random
-
-def check_sort(list):
-
-    for i in range(len(list)-1):
-
-        if (list[i] > list[i+1]):
-            return False
-
-    return True
+from helper import check_sort
 
 def monkey_sort(list):
     sorted_list = list.copy()
@@ -22,6 +14,7 @@ def monkey_sort(list):
         while (len(sorted_list) != len(list)):
             print(len(sorted_list))
             ran = random.randint(0, len(list)-1)
+            #this line makes it even slower
             if (ran in indexes):
                 continue
 
@@ -32,8 +25,8 @@ def monkey_sort(list):
 
 def main():
     l = []
-    for n in range(100):
-        l.append(random.randint(-1000000, 1000000))
+    for n in range(200):
+        l.append(random.randint(1, 100))
 
     print(monkey_sort(l))
 
