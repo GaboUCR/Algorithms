@@ -32,7 +32,7 @@ def main():
 
     l = [4, 7,8, 10, 100, 230, 506, 1000]
 
-    print(binary_search(l, 10001))
+    print(binary_search(l, 1))
 
 if __name__ == '__main__':
     main()
