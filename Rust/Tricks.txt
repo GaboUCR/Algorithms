@@ -1,0 +1,13 @@
+std::mem::replace
+  used to change a mutable reference safely.
+  Example:
+    https://rust-unofficial.github.io/too-many-lists/first-push.html
+
+
+
+Doubts:
+
+  type keyword.
+
+  iterating a list with
+  https://rust-unofficial.github.io/too-many-lists/first-drop.html
