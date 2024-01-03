@@ -1,3 +1,3 @@
-from .day_one import day_one
-from .day_two import day_two
-from .day_three import day_three
+from .day_1 import day_one
+from .day_2 import day_two
+from .day_3 import day_three
