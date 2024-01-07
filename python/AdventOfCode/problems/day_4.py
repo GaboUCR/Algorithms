@@ -54,7 +54,7 @@ def day_four():
         nums = [int(n.strip()) for n in nums if n.isdigit()]
 
         cards.append(Card(int(card_num), winning_nums, nums))
-    
+        
     for i in range(len(cards)):
 
         for m in cards[i].get_matches():
